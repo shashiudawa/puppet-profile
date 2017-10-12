@@ -9,7 +9,7 @@ class profile::base(
     servers => $ntp_servers,
   }
 
-  if $facts['os']['family']== 'Redhat' {
-    include ::profile::selinux
-  }
+  #  if $facts['os']['family']== 'Redhat' {
+    # include ::profile::selinux
+    #}
 }
